@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Corrección CRUD Prendas</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
   </head>
   <body>
     <form id="formulario-prenda">
@@ -24,8 +31,21 @@
         <label>Cantidad</label>
         <input type="number" name="cantidad" />
       </div>
-      <button id="boton-crear" type="button">CREAR</button>
+      <div id="botones-de-accion"></div>
     </form>
+    <hr />
+    <table id="prendas-tabla">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Talla</th>
+          <th>Marca</th>
+          <th>Cantidad</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
   </body>
   <script src="mocks/prendas.js"></script>
   <script src="script.js"></script>
